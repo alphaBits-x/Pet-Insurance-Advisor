@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare Insurance - Protect Your Furry Family</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <div class="logo">
+                <img src="images/lpulogo.png" alt="PetCare Insurance Logo" class="logo-image">
+                <h1>PetCare Insurance</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#coverage">Coverage</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="team-button" id="teamButton">
+                <i class="fas fa-users"></i>
+            </button>
+            <button class="cta-button">Get a Quote</button>
+        </nav>
+    </header>
+
+    <!-- Team Members Popup -->
+    <div class="team-popup" id="teamPopup">
+        <div class="team-popup-content">
+            <h3>Team Members</h3>
+            <ul class="team-list">
+                <li>12303810 - Prabhav Gupta</li>
+                <li>12304464 - Satyam Kumar</li>
+                <li>12305274 - Yogesh S</li>
+            </ul>
+            <button class="close-popup" id="closeTeamPopup">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Protect Your Pet's Health with Comprehensive Insurance</h1>
+                <p>Get peace of mind knowing your furry friend is covered with our customizable pet insurance plans.</p>
+                <button class="cta-button">Start Your Quote</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/pet-hero.jpg" alt="Happy pet with owner" class="hero-pet-image">
+            </div>
+        </section>
+
+        <section id="benefits">
+            <h2>Why Choose PetCare Insurance?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Comprehensive Coverage</h3>
+                    <p>Coverage for accidents, illnesses, and routine care</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Affordable Plans</h3>
+                    <p>Flexible payment options starting from $29/month</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Quick Claims</h3>
+                    <p>Fast and easy claims process</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>No Age Limits</h3>
+                    <p>Coverage available for pets of all ages</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>About Pet Insurance Advisor</h2>
+                <div class="about-text">
+                    <p class="lead">Caring for your pet means planning for the unexpected. Our Pet Insurance Advisor is here to help you make informed decisions by simplifying the process of finding the right insurance for your furry companion.</p>
+                    
+                    <p>We compare top pet insurance providers, break down complex policy details, and offer personalized recommendations based on your pet's breed, age, health, and your budget. Whether you're a first-time pet parent or looking to switch plans, our goal is to give you clear, honest advice—no jargon, no pressure.</p>
+                    
+                    <p class="highlight">Because pets are family—and they deserve the best care.</p>
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-search"></i>
+                        <h3>Compare Providers</h3>
+                        <p>We analyze top pet insurance companies to find the best options for you.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Simplify Policies</h3>
+                        <p>We break down complex insurance terms into easy-to-understand language.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Personalized Advice</h3>
+                        <p>Get recommendations tailored to your pet's specific needs and your budget.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="coverage">
+            <h2>What We Cover</h2>
+            <div class="coverage-grid">
+                <div class="coverage-item">
+                    <h3>Accidents</h3>
+                    <ul>
+                        <li>Emergency visits</li>
+                        <li>X-rays and lab tests</li>
+                        <li>Surgery and hospitalization</li>
+                    </ul>
+                </div>
+                <div class="coverage-item">
+                    <h3>Illnesses</h3>
+                    <ul>
+                        <li>Diagnostic tests</li>
+                        <li>Prescription medications</li>
+                        <li>Chronic conditions</li>
+                    </ul>
+                </div>
+                <div class="coverage-item">
+                    <h3>Wellness</h3>
+                    <ul>
+                        <li>Vaccinations</li>
+                        <li>Annual check-ups</li>
+                        <li>Preventive care</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="quote-form">
+            <h2>Get Your Free Quote</h2>
+            <form id="insurance-quote">
+                <div class="form-group">
+                    <input type="text" placeholder="Pet's Name" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Pet Type</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Pet's Age" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <button type="submit" class="cta-button">Get Quote</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@petcareinsurance.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PetCare Insurance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Interface -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+            <span class="notification-badge">1</span>
+        </button>
+        <div class="chatbot-box" id="chatbotBox">
+            <div class="chatbot-header">
+                <h3>Pet Insurance Assistant</h3>
+                <button class="close-chat" id="closeChat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="message-content">
+                        Hello! I'm your pet insurance assistant. How can I help you today?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
